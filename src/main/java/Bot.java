@@ -9,7 +9,7 @@ import java.util.Random;
 
 
 public class Bot extends TelegramLongPollingBot {
-    private static final String TOKEN = "5918365151:AAF_5seI26ryFmt_1OIY-MbfyMGhk-HG4W0";
+    private static final String TOKEN = "token";
     private static final String USERNAME = "knig0_bot";
     String url = "jdbc:sqlite:C:\\Users\\Nikita\\Desktop\\dbsforbot\\TelegramLibrary.db";
     private String allListComm = "/view";
