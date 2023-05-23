@@ -1,0 +1,18 @@
+--
+-- Файл сгенерирован с помощью SQLiteStudio v3.4.4 в Вт май 23 10:47:29 2023
+--
+-- Использованная кодировка текста: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Таблица: Order
+CREATE TABLE IF NOT EXISTS "Order" (Books TEXT, ID INTEGER PRIMARY KEY, Adress TEXT, Sum INTEGER, Status TEXT);
+INSERT INTO "Order" (Books, ID, Adress, Sum, Status) VALUES ('тестовые книги', 0, 'тестовый адрес', 1, 'Not Ready');
+INSERT INTO "Order" (Books, ID, Adress, Sum, Status) VALUES ('[М.А. Шолохов, Тихий Дон, 400руб.]', 1488939, 'ул.Пушкина, д.Колотушкина', 400, 'Ready');
+INSERT INTO "Order" (Books, ID, Adress, Sum, Status) VALUES ('[А.С. Пушкин, Капитанская Дочка, 250руб.]', 2582305, 'ул.Пушкина, д.Колотушкина', 250, 'Готов');
+INSERT INTO "Order" (Books, ID, Adress, Sum, Status) VALUES ('[Д.А. Глуховский, Метро 2033, 790руб.]', 9250761, 'Ул.Петрцшкина,д.Колотушкина', 790, 'Not Ready');
+INSERT INTO "Order" (Books, ID, Adress, Sum, Status) VALUES ('[Д.А. Глуховский, Метро 2033, 790руб., М.А. Шолохов, Тихий Дон, 400руб.]', 9280413, 'г. Казань, ул. Услонская, д.6', 1190, 'Not Ready');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
